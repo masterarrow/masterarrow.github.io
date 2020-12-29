@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Weather forecast</title>
+    <meta charset="UTF-8">
+    <title>Weather forecast</title>
 
-  <link rel="stylesheet" type="text/css" href="assets/style.css">
-  <script type="text/javascript" src="assets/date.js"></script>
-  <script src="assets/main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script type="text/javascript" src="assets/date.js"></script>
+    <script src="assets/main.js" defer></script>
 </head>
 <body>
-  <div id="container">
-    <h1 id="city">City</h1>
-    <h3 id="date">DD MM YYY</h3>
+<div id="container">
 
-    <h2>
-      <span id="temp">17 °C</span>
-      <img id="img" src="http://openweathermap.org/img/wn/03d.png" alt="..."/>
-      <span id="cloud_desc">Clouds</span>
-    </h2>
+    <div class="top">
+        <h1 id="city">City</h1>
+        <h3 id="date">DD MM YYY</h3>
+
+        <h2>
+            <span id="temp">17 °C</span>
+            <img id="img" src="http://openweathermap.org/img/wn/03d.png" alt="..."/>
+            <span id="cloud_desc">Clouds</span>
+        </h2>
+    </div>
 
     <div id="search_div">
-      <img id="google" src="assets/google-icon.png" alt="..."/>
-      <label for="search"></label><input id="search" placeholder="Search in the Internet" autocomplete="off"/>
+        <img id="google" src="assets/google-icon.png" alt="..."/>
+        <label for="search"></label><input id="search" placeholder="Search in the Internet" autocomplete="off"/>
     </div>
-    <pre>Cloudiness: <span id="cloud">40</span>%       Humidity: <span id="humidity">77</span>%</pre>
-    <h4>Pressure: <span id="pressure">757,6</span> mmHg</h4>
-    <h4>Wind: <span id="wind_speed">6</span> m/s <img id="direction" src="assets/arrow.png" alt="..."/></h4>
-  </div>
+
+    <div class="bottom">
+        <pre>Cloudiness: <span id="cloud">40</span>%       Humidity: <span id="humidity">77</span>%</pre>
+        <h4>Pressure: <span id="pressure">757,6</span> mmHg</h4>
+        <h4>Wind: <span id="wind_speed">6</span> m/s <img id="direction" src="assets/arrow.png" alt="..."/></h4>
+    </div>
+</div>
 </body>
 </html>
